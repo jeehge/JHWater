@@ -5,28 +5,67 @@
 //  Created by JH on 2023/06/24.
 //
 
-import WidgetKit
-import SwiftUI
 import Intents
+import SwiftUI
+import WidgetKit
 
 struct Provider: IntentTimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+    func placeholder(in context: Context) -> DrinkWaterEntry {
+        let entry = DrinkWaterEntry(
+            date: Date(),
+            glassesOfWater: Array(repeating: false, count: 8),
+            configuration: ConfigurationIntent()
+        )
+        return entry
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), configuration: configuration)
+    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (DrinkWaterEntry) -> Void) {
+        let count = UserDefaults.shared.integer(forKey: "drinkCount")
+		
+        let glassesOfWater: [Bool] = {
+            var arr = [Bool]()
+            for _ in 0 ..< count {
+                arr.append(true)
+            }
+            for _ in 0 ..< (8 - count) {
+                arr.append(false)
+            }
+            return arr
+        }()
+
+        let entry = DrinkWaterEntry(
+            date: Date(),
+            glassesOfWater: glassesOfWater,
+            configuration: ConfigurationIntent()
+        )
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> Void) {
+        var entries: [DrinkWaterEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration)
+
+            let count = UserDefaults.shared.integer(forKey: "drinkCount")
+			
+            let glassesOfWater: [Bool] = {
+                var arr = [Bool]()
+                for _ in 0 ..< count {
+                    arr.append(true)
+                }
+                for _ in 0 ..< (8 - count) {
+                    arr.append(false)
+                }
+                return arr
+            }()
+            let entry = DrinkWaterEntry(
+                date: entryDate,
+                glassesOfWater: glassesOfWater,
+                configuration: configuration
+            )
             entries.append(entry)
         }
 
@@ -35,16 +74,46 @@ struct Provider: IntentTimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct DrinkWaterEntry: TimelineEntry {
     let date: Date
+    let glassesOfWater: [Bool]
     let configuration: ConfigurationIntent
 }
 
-struct JHWaterWidgetEntryView : View {
+struct JHWaterWidgetEntryView: View {
     var entry: Provider.Entry
 
+    var drinkWater: Int {
+        entry.glassesOfWater.filter { $0 }.count
+    }
+
     var body: some View {
-        Text(entry.date, style: .time)
+        ZStack {
+            VStack(spacing: 1) {
+                ForEach(0 ..< entry.glassesOfWater.count) { index in
+                    if entry.glassesOfWater.reversed()[index] {
+                        Rectangle()
+                            .fill(Color.teal)
+                    } else {
+                        Rectangle()
+                            .fill(Color.white)
+                    }
+                }
+            }
+
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("\(drinkWater)잔")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .shadow(color: .black, radius: 3)
+                }
+                .padding(.horizontal)
+            }
+            .padding(.init(top: 0, leading: 0, bottom: 5, trailing: 0))
+        }
     }
 }
 
@@ -62,7 +131,14 @@ struct JHWaterWidget: Widget {
 
 struct JHWaterWidget_Previews: PreviewProvider {
     static var previews: some View {
-        JHWaterWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        JHWaterWidgetEntryView(entry: DrinkWaterEntry(date: Date(), glassesOfWater: [true, true, true, true, true, false, false, false], configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
+    }
+}
+
+extension UserDefaults {
+    static var shared: UserDefaults {
+        let appGroupId = "group.com.jeehge.water.info"
+        return UserDefaults(suiteName: appGroupId)!
     }
 }

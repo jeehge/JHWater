@@ -23,6 +23,7 @@
 		E90A9D592A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */; };
 		E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */; };
 		E90A9D5D2A470F0000D95679 /* JHWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E90A9D662A47107900D95679 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,9 @@
 		E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = JHWaterWidget.intentdefinition; sourceTree = "<group>"; };
 		E90A9D562A470F0000D95679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90A9D582A470F0000D95679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90A9D622A470F9B00D95679 /* JHWater.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHWater.entitlements; sourceTree = "<group>"; };
+		E90A9D632A47101A00D95679 /* JHWaterWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHWaterWidgetExtension.entitlements; sourceTree = "<group>"; };
+		E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		E90A9D0E2A470E3A00D95679 = {
 			isa = PBXGroup;
 			children = (
+				E90A9D632A47101A00D95679 /* JHWaterWidgetExtension.entitlements */,
 				E90A9D192A470E3A00D95679 /* JHWater */,
 				E90A9D2A2A470E3B00D95679 /* JHWaterTests */,
 				E90A9D342A470E3B00D95679 /* JHWaterUITests */,
@@ -145,8 +150,10 @@
 		E90A9D192A470E3A00D95679 /* JHWater */ = {
 			isa = PBXGroup;
 			children = (
+				E90A9D622A470F9B00D95679 /* JHWater.entitlements */,
 				E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */,
 				E90A9D1C2A470E3A00D95679 /* ContentView.swift */,
+				E90A9D642A47106600D95679 /* Utils */,
 				E90A9D1E2A470E3B00D95679 /* Assets.xcassets */,
 				E90A9D202A470E3B00D95679 /* Preview Content */,
 			);
@@ -198,6 +205,14 @@
 				E90A9D582A470F0000D95679 /* Info.plist */,
 			);
 			path = JHWaterWidget;
+			sourceTree = "<group>";
+		};
+		E90A9D642A47106600D95679 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +378,7 @@
 			files = (
 				E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
 				E90A9D1D2A470E3A00D95679 /* ContentView.swift in Sources */,
+				E90A9D662A47107900D95679 /* UserDefaults+Extension.swift in Sources */,
 				E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,12 +552,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JHWater/JHWater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JHWater/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -554,9 +572,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -566,12 +587,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JHWater/JHWater.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JHWater/Preview Content\"";
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -584,9 +607,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -671,6 +697,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JHWaterWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
@@ -698,6 +725,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = JHWaterWidgetExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4U3LY873Q2;
