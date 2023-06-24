@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */; };
-		E90A9D1D2A470E3A00D95679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D1C2A470E3A00D95679 /* ContentView.swift */; };
+		E90A9D1D2A470E3A00D95679 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D1C2A470E3A00D95679 /* MainView.swift */; };
 		E90A9D1F2A470E3B00D95679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D1E2A470E3B00D95679 /* Assets.xcassets */; };
 		E90A9D222A470E3B00D95679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D212A470E3B00D95679 /* Preview Assets.xcassets */; };
 		E90A9D2C2A470E3B00D95679 /* JHWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D2B2A470E3B00D95679 /* JHWaterTests.swift */; };
@@ -24,6 +24,14 @@
 		E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */; };
 		E90A9D5D2A470F0000D95679 /* JHWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E90A9D662A47107900D95679 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */; };
+		E90A9D6D2A471B2600D95679 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D6C2A471B2600D95679 /* LaunchScreenView.swift */; };
+		E90A9D702A471BE500D95679 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E90A9D6F2A471BE500D95679 /* Lottie */; };
+		E90A9D722A471D1500D95679 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D712A471D1500D95679 /* LottieView.swift */; };
+		E90A9D762A474B2900D95679 /* 83562-water.json in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D752A474B2900D95679 /* 83562-water.json */; };
+		E90A9D7B2A47520000D95679 /* Animation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D7A2A47520000D95679 /* Animation+Extension.swift */; };
+		E90A9D7D2A47531400D95679 /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D7C2A47531400D95679 /* FadeInOut.swift */; };
+		E90A9D7F2A47548B00D95679 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D7E2A47548B00D95679 /* HeaderView.swift */; };
+		E90A9D812A475AF200D95679 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D802A475AF200D95679 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +75,7 @@
 /* Begin PBXFileReference section */
 		E90A9D172A470E3A00D95679 /* JHWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterApp.swift; sourceTree = "<group>"; };
-		E90A9D1C2A470E3A00D95679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E90A9D1C2A470E3A00D95679 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E90A9D1E2A470E3B00D95679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90A9D212A470E3B00D95679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E90A9D272A470E3B00D95679 /* JHWaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHWaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +95,13 @@
 		E90A9D622A470F9B00D95679 /* JHWater.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHWater.entitlements; sourceTree = "<group>"; };
 		E90A9D632A47101A00D95679 /* JHWaterWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JHWaterWidgetExtension.entitlements; sourceTree = "<group>"; };
 		E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		E90A9D6C2A471B2600D95679 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		E90A9D712A471D1500D95679 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		E90A9D752A474B2900D95679 /* 83562-water.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "83562-water.json"; sourceTree = "<group>"; };
+		E90A9D7A2A47520000D95679 /* Animation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Extension.swift"; sourceTree = "<group>"; };
+		E90A9D7C2A47531400D95679 /* FadeInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
+		E90A9D7E2A47548B00D95679 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E90A9D802A475AF200D95679 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90A9D702A471BE500D95679 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +168,7 @@
 			children = (
 				E90A9D622A470F9B00D95679 /* JHWater.entitlements */,
 				E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */,
-				E90A9D1C2A470E3A00D95679 /* ContentView.swift */,
+				E90A9D6A2A471A8500D95679 /* View */,
 				E90A9D642A47106600D95679 /* Utils */,
 				E90A9D1E2A470E3B00D95679 /* Assets.xcassets */,
 				E90A9D202A470E3B00D95679 /* Preview Content */,
@@ -210,9 +226,32 @@
 		E90A9D642A47106600D95679 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E90A9D792A4751EC00D95679 /* Lottie */,
 				E90A9D652A47107900D95679 /* UserDefaults+Extension.swift */,
+				E90A9D7A2A47520000D95679 /* Animation+Extension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		E90A9D6A2A471A8500D95679 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D6C2A471B2600D95679 /* LaunchScreenView.swift */,
+				E90A9D1C2A470E3A00D95679 /* MainView.swift */,
+				E90A9D712A471D1500D95679 /* LottieView.swift */,
+				E90A9D7C2A47531400D95679 /* FadeInOut.swift */,
+				E90A9D7E2A47548B00D95679 /* HeaderView.swift */,
+				E90A9D802A475AF200D95679 /* SettingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E90A9D792A4751EC00D95679 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D752A474B2900D95679 /* 83562-water.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +272,9 @@
 				E90A9D5C2A470F0000D95679 /* PBXTargetDependency */,
 			);
 			name = JHWater;
+			packageProductDependencies = (
+				E90A9D6F2A471BE500D95679 /* Lottie */,
+			);
 			productName = JHWater;
 			productReference = E90A9D172A470E3A00D95679 /* JHWater.app */;
 			productType = "com.apple.product-type.application";
@@ -325,6 +367,9 @@
 				Base,
 			);
 			mainGroup = E90A9D0E2A470E3A00D95679;
+			packageReferences = (
+				E90A9D6E2A471BE500D95679 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E90A9D182A470E3A00D95679 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90A9D762A474B2900D95679 /* 83562-water.json in Resources */,
 				E90A9D222A470E3B00D95679 /* Preview Assets.xcassets in Resources */,
 				E90A9D1F2A470E3B00D95679 /* Assets.xcassets in Resources */,
 			);
@@ -376,10 +422,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E90A9D6D2A471B2600D95679 /* LaunchScreenView.swift in Sources */,
+				E90A9D812A475AF200D95679 /* SettingView.swift in Sources */,
+				E90A9D7F2A47548B00D95679 /* HeaderView.swift in Sources */,
+				E90A9D7D2A47531400D95679 /* FadeInOut.swift in Sources */,
 				E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
-				E90A9D1D2A470E3A00D95679 /* ContentView.swift in Sources */,
+				E90A9D1D2A470E3A00D95679 /* MainView.swift in Sources */,
 				E90A9D662A47107900D95679 /* UserDefaults+Extension.swift in Sources */,
 				E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */,
+				E90A9D722A471D1500D95679 /* LottieView.swift in Sources */,
+				E90A9D7B2A47520000D95679 /* Animation+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +849,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E90A9D6E2A471BE500D95679 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E90A9D6F2A471BE500D95679 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E90A9D6E2A471BE500D95679 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E90A9D0F2A470E3A00D95679 /* Project object */;
 }
