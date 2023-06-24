@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */; };
+		E90A9D1D2A470E3A00D95679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D1C2A470E3A00D95679 /* ContentView.swift */; };
+		E90A9D1F2A470E3B00D95679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D1E2A470E3B00D95679 /* Assets.xcassets */; };
+		E90A9D222A470E3B00D95679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D212A470E3B00D95679 /* Preview Assets.xcassets */; };
+		E90A9D2C2A470E3B00D95679 /* JHWaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D2B2A470E3B00D95679 /* JHWaterTests.swift */; };
+		E90A9D362A470E3B00D95679 /* JHWaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D352A470E3B00D95679 /* JHWaterUITests.swift */; };
+		E90A9D382A470E3B00D95679 /* JHWaterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D372A470E3B00D95679 /* JHWaterUITestsLaunchTests.swift */; };
+		E90A9D4B2A470EFF00D95679 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90A9D4A2A470EFF00D95679 /* WidgetKit.framework */; };
+		E90A9D4D2A470EFF00D95679 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E90A9D4C2A470EFF00D95679 /* SwiftUI.framework */; };
+		E90A9D502A470EFF00D95679 /* JHWaterWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D4F2A470EFF00D95679 /* JHWaterWidgetBundle.swift */; };
+		E90A9D522A470EFF00D95679 /* JHWaterWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D512A470EFF00D95679 /* JHWaterWidgetLiveActivity.swift */; };
+		E90A9D542A470EFF00D95679 /* JHWaterWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D532A470EFF00D95679 /* JHWaterWidget.swift */; };
+		E90A9D572A470F0000D95679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90A9D562A470F0000D95679 /* Assets.xcassets */; };
+		E90A9D592A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */; };
+		E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */; };
+		E90A9D5D2A470F0000D95679 /* JHWaterWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E90A9D282A470E3B00D95679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90A9D0F2A470E3A00D95679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90A9D162A470E3A00D95679;
+			remoteInfo = JHWater;
+		};
+		E90A9D322A470E3B00D95679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90A9D0F2A470E3A00D95679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90A9D162A470E3A00D95679;
+			remoteInfo = JHWater;
+		};
+		E90A9D5B2A470F0000D95679 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E90A9D0F2A470E3A00D95679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E90A9D472A470EFF00D95679;
+			remoteInfo = JHWaterWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E90A9D612A470F0000D95679 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E90A9D5D2A470F0000D95679 /* JHWaterWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E90A9D172A470E3A00D95679 /* JHWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterApp.swift; sourceTree = "<group>"; };
+		E90A9D1C2A470E3A00D95679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E90A9D1E2A470E3B00D95679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90A9D212A470E3B00D95679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E90A9D272A470E3B00D95679 /* JHWaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHWaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90A9D2B2A470E3B00D95679 /* JHWaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterTests.swift; sourceTree = "<group>"; };
+		E90A9D312A470E3B00D95679 /* JHWaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JHWaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90A9D352A470E3B00D95679 /* JHWaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterUITests.swift; sourceTree = "<group>"; };
+		E90A9D372A470E3B00D95679 /* JHWaterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JHWaterWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90A9D4A2A470EFF00D95679 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E90A9D4C2A470EFF00D95679 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E90A9D4F2A470EFF00D95679 /* JHWaterWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterWidgetBundle.swift; sourceTree = "<group>"; };
+		E90A9D512A470EFF00D95679 /* JHWaterWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		E90A9D532A470EFF00D95679 /* JHWaterWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterWidget.swift; sourceTree = "<group>"; };
+		E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = JHWaterWidget.intentdefinition; sourceTree = "<group>"; };
+		E90A9D562A470F0000D95679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E90A9D582A470F0000D95679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E90A9D142A470E3A00D95679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D242A470E3B00D95679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D2E2A470E3B00D95679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D452A470EFF00D95679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D4D2A470EFF00D95679 /* SwiftUI.framework in Frameworks */,
+				E90A9D4B2A470EFF00D95679 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E90A9D0E2A470E3A00D95679 = {
+			isa = PBXGroup;
+			children = (
+				E90A9D192A470E3A00D95679 /* JHWater */,
+				E90A9D2A2A470E3B00D95679 /* JHWaterTests */,
+				E90A9D342A470E3B00D95679 /* JHWaterUITests */,
+				E90A9D4E2A470EFF00D95679 /* JHWaterWidget */,
+				E90A9D492A470EFF00D95679 /* Frameworks */,
+				E90A9D182A470E3A00D95679 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E90A9D182A470E3A00D95679 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D172A470E3A00D95679 /* JHWater.app */,
+				E90A9D272A470E3B00D95679 /* JHWaterTests.xctest */,
+				E90A9D312A470E3B00D95679 /* JHWaterUITests.xctest */,
+				E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E90A9D192A470E3A00D95679 /* JHWater */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */,
+				E90A9D1C2A470E3A00D95679 /* ContentView.swift */,
+				E90A9D1E2A470E3B00D95679 /* Assets.xcassets */,
+				E90A9D202A470E3B00D95679 /* Preview Content */,
+			);
+			path = JHWater;
+			sourceTree = "<group>";
+		};
+		E90A9D202A470E3B00D95679 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D212A470E3B00D95679 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E90A9D2A2A470E3B00D95679 /* JHWaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D2B2A470E3B00D95679 /* JHWaterTests.swift */,
+			);
+			path = JHWaterTests;
+			sourceTree = "<group>";
+		};
+		E90A9D342A470E3B00D95679 /* JHWaterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D352A470E3B00D95679 /* JHWaterUITests.swift */,
+				E90A9D372A470E3B00D95679 /* JHWaterUITestsLaunchTests.swift */,
+			);
+			path = JHWaterUITests;
+			sourceTree = "<group>";
+		};
+		E90A9D492A470EFF00D95679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D4A2A470EFF00D95679 /* WidgetKit.framework */,
+				E90A9D4C2A470EFF00D95679 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E90A9D4E2A470EFF00D95679 /* JHWaterWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E90A9D4F2A470EFF00D95679 /* JHWaterWidgetBundle.swift */,
+				E90A9D512A470EFF00D95679 /* JHWaterWidgetLiveActivity.swift */,
+				E90A9D532A470EFF00D95679 /* JHWaterWidget.swift */,
+				E90A9D552A470EFF00D95679 /* JHWaterWidget.intentdefinition */,
+				E90A9D562A470F0000D95679 /* Assets.xcassets */,
+				E90A9D582A470F0000D95679 /* Info.plist */,
+			);
+			path = JHWaterWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E90A9D162A470E3A00D95679 /* JHWater */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90A9D3B2A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWater" */;
+			buildPhases = (
+				E90A9D132A470E3A00D95679 /* Sources */,
+				E90A9D142A470E3A00D95679 /* Frameworks */,
+				E90A9D152A470E3A00D95679 /* Resources */,
+				E90A9D612A470F0000D95679 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90A9D5C2A470F0000D95679 /* PBXTargetDependency */,
+			);
+			name = JHWater;
+			productName = JHWater;
+			productReference = E90A9D172A470E3A00D95679 /* JHWater.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E90A9D262A470E3B00D95679 /* JHWaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90A9D3E2A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWaterTests" */;
+			buildPhases = (
+				E90A9D232A470E3B00D95679 /* Sources */,
+				E90A9D242A470E3B00D95679 /* Frameworks */,
+				E90A9D252A470E3B00D95679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90A9D292A470E3B00D95679 /* PBXTargetDependency */,
+			);
+			name = JHWaterTests;
+			productName = JHWaterTests;
+			productReference = E90A9D272A470E3B00D95679 /* JHWaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E90A9D302A470E3B00D95679 /* JHWaterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90A9D412A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWaterUITests" */;
+			buildPhases = (
+				E90A9D2D2A470E3B00D95679 /* Sources */,
+				E90A9D2E2A470E3B00D95679 /* Frameworks */,
+				E90A9D2F2A470E3B00D95679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E90A9D332A470E3B00D95679 /* PBXTargetDependency */,
+			);
+			name = JHWaterUITests;
+			productName = JHWaterUITests;
+			productReference = E90A9D312A470E3B00D95679 /* JHWaterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E90A9D472A470EFF00D95679 /* JHWaterWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E90A9D5E2A470F0000D95679 /* Build configuration list for PBXNativeTarget "JHWaterWidgetExtension" */;
+			buildPhases = (
+				E90A9D442A470EFF00D95679 /* Sources */,
+				E90A9D452A470EFF00D95679 /* Frameworks */,
+				E90A9D462A470EFF00D95679 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JHWaterWidgetExtension;
+			productName = JHWaterWidgetExtension;
+			productReference = E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E90A9D0F2A470E3A00D95679 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					E90A9D162A470E3A00D95679 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					E90A9D262A470E3B00D95679 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E90A9D162A470E3A00D95679;
+					};
+					E90A9D302A470E3B00D95679 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = E90A9D162A470E3A00D95679;
+					};
+					E90A9D472A470EFF00D95679 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E90A9D122A470E3A00D95679 /* Build configuration list for PBXProject "JHWater" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E90A9D0E2A470E3A00D95679;
+			productRefGroup = E90A9D182A470E3A00D95679 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E90A9D162A470E3A00D95679 /* JHWater */,
+				E90A9D262A470E3B00D95679 /* JHWaterTests */,
+				E90A9D302A470E3B00D95679 /* JHWaterUITests */,
+				E90A9D472A470EFF00D95679 /* JHWaterWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E90A9D152A470E3A00D95679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D222A470E3B00D95679 /* Preview Assets.xcassets in Resources */,
+				E90A9D1F2A470E3B00D95679 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D252A470E3B00D95679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D2F2A470E3B00D95679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D462A470EFF00D95679 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D572A470F0000D95679 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E90A9D132A470E3A00D95679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
+				E90A9D1D2A470E3A00D95679 /* ContentView.swift in Sources */,
+				E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D232A470E3B00D95679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D2C2A470E3B00D95679 /* JHWaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D2D2A470E3B00D95679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D382A470E3B00D95679 /* JHWaterUITestsLaunchTests.swift in Sources */,
+				E90A9D362A470E3B00D95679 /* JHWaterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E90A9D442A470EFF00D95679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90A9D592A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
+				E90A9D542A470EFF00D95679 /* JHWaterWidget.swift in Sources */,
+				E90A9D522A470EFF00D95679 /* JHWaterWidgetLiveActivity.swift in Sources */,
+				E90A9D502A470EFF00D95679 /* JHWaterWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E90A9D292A470E3B00D95679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90A9D162A470E3A00D95679 /* JHWater */;
+			targetProxy = E90A9D282A470E3B00D95679 /* PBXContainerItemProxy */;
+		};
+		E90A9D332A470E3B00D95679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90A9D162A470E3A00D95679 /* JHWater */;
+			targetProxy = E90A9D322A470E3B00D95679 /* PBXContainerItemProxy */;
+		};
+		E90A9D5C2A470F0000D95679 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E90A9D472A470EFF00D95679 /* JHWaterWidgetExtension */;
+			targetProxy = E90A9D5B2A470F0000D95679 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E90A9D392A470E3B00D95679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E90A9D3A2A470E3B00D95679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E90A9D3C2A470E3B00D95679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JHWater/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E90A9D3D2A470E3B00D95679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JHWater/Preview Content\"";
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E90A9D3F2A470E3B00D95679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHWater.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JHWater";
+			};
+			name = Debug;
+		};
+		E90A9D402A470E3B00D95679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JHWater.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JHWater";
+			};
+			name = Release;
+		};
+		E90A9D422A470E3B00D95679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHWater;
+			};
+			name = Debug;
+		};
+		E90A9D432A470E3B00D95679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWaterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JHWater;
+			};
+			name = Release;
+		};
+		E90A9D5F2A470F0000D95679 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JHWaterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JHWaterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater.JHWaterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E90A9D602A470F0000D95679 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4U3LY873Q2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JHWaterWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = JHWaterWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater.JHWaterWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E90A9D122A470E3A00D95679 /* Build configuration list for PBXProject "JHWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A9D392A470E3B00D95679 /* Debug */,
+				E90A9D3A2A470E3B00D95679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90A9D3B2A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWater" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A9D3C2A470E3B00D95679 /* Debug */,
+				E90A9D3D2A470E3B00D95679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90A9D3E2A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A9D3F2A470E3B00D95679 /* Debug */,
+				E90A9D402A470E3B00D95679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90A9D412A470E3B00D95679 /* Build configuration list for PBXNativeTarget "JHWaterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A9D422A470E3B00D95679 /* Debug */,
+				E90A9D432A470E3B00D95679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E90A9D5E2A470F0000D95679 /* Build configuration list for PBXNativeTarget "JHWaterWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E90A9D5F2A470F0000D95679 /* Debug */,
+				E90A9D602A470F0000D95679 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E90A9D0F2A470E3A00D95679 /* Project object */;
+}
