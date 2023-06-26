@@ -74,7 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E90A9D172A470E3A00D95679 /* JHWater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JHWater.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90A9D172A470E3A00D95679 /* 지혜로운 수분충전.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "지혜로운 수분충전.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JHWaterApp.swift; sourceTree = "<group>"; };
 		E90A9D1C2A470E3A00D95679 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		E90A9D1E2A470E3B00D95679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		E90A9D182A470E3A00D95679 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E90A9D172A470E3A00D95679 /* JHWater.app */,
+				E90A9D172A470E3A00D95679 /* 지혜로운 수분충전.app */,
 				E90A9D272A470E3B00D95679 /* JHWaterTests.xctest */,
 				E90A9D312A470E3B00D95679 /* JHWaterUITests.xctest */,
 				E90A9D482A470EFF00D95679 /* JHWaterWidgetExtension.appex */,
@@ -279,7 +279,7 @@
 				E90A9D6F2A471BE500D95679 /* Lottie */,
 			);
 			productName = JHWater;
-			productReference = E90A9D172A470E3A00D95679 /* JHWater.app */;
+			productReference = E90A9D172A470E3A00D95679 /* 지혜로운 수분충전.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E90A9D262A470E3B00D95679 /* JHWaterTests */ = {
@@ -627,7 +627,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "지혜로운 수분충전";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -662,7 +662,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.app.JHWater;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "지혜로운 수분충전";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
