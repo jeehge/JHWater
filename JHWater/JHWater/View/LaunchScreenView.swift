@@ -24,6 +24,7 @@ struct LaunchScreenView: View {
                 .foregroundColor(.white)
         }
         .onReceive(moveToTimer) { _ in
+			UserDefaults.shared.set(8, forKey: "totalCount")
             navigated = true
         }
         .fullScreenCover(isPresented: $navigated) {

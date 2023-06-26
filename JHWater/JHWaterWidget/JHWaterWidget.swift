@@ -11,9 +11,10 @@ import WidgetKit
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> DrinkWaterEntry {
+		let totalCount = UserDefaults.shared.integer(forKey: "totalCount")
         let entry = DrinkWaterEntry(
             date: Date(),
-            glassesOfWater: Array(repeating: false, count: 8),
+            glassesOfWater: Array(repeating: false, count: totalCount),
             configuration: ConfigurationIntent()
         )
         return entry
@@ -21,18 +22,8 @@ struct Provider: IntentTimelineProvider {
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (DrinkWaterEntry) -> Void) {
         let count = UserDefaults.shared.integer(forKey: "drinkCount")
+		let glassesOfWater = getGlassesOfWater(with: count)
 		
-        let glassesOfWater: [Bool] = {
-            var arr = [Bool]()
-            for _ in 0 ..< count {
-                arr.append(true)
-            }
-            for _ in 0 ..< (8 - count) {
-                arr.append(false)
-            }
-            return arr
-        }()
-
         let entry = DrinkWaterEntry(
             date: Date(),
             glassesOfWater: glassesOfWater,
@@ -48,19 +39,9 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-
-            let count = UserDefaults.shared.integer(forKey: "drinkCount")
 			
-            let glassesOfWater: [Bool] = {
-                var arr = [Bool]()
-                for _ in 0 ..< count {
-                    arr.append(true)
-                }
-                for _ in 0 ..< (8 - count) {
-                    arr.append(false)
-                }
-                return arr
-            }()
+			let count = UserDefaults.shared.integer(forKey: "drinkCount")
+			let glassesOfWater = getGlassesOfWater(with: count)
             let entry = DrinkWaterEntry(
                 date: entryDate,
                 glassesOfWater: glassesOfWater,
@@ -72,6 +53,18 @@ struct Provider: IntentTimelineProvider {
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
+	
+	private func getGlassesOfWater(with drinkwater: Int) -> [Bool] {
+		let totalCount = UserDefaults.shared.integer(forKey: "totalCount")
+		var arr = [Bool]()
+		for _ in 0..<drinkwater {
+			arr.append(true)
+		}
+		for _ in 0..<(totalCount - drinkwater) {
+			arr.append(false)
+		}
+		return arr
+	}
 }
 
 struct DrinkWaterEntry: TimelineEntry {

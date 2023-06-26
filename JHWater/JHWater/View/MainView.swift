@@ -10,17 +10,19 @@ import WidgetKit
 
 struct MainView: View {
     @State private var count = UserDefaults.shared.integer(forKey: "drinkCount")
-    @State private var isPresented: Bool = false
+    @State private var totalCount = UserDefaults.shared.integer(forKey: "totalCount")
+    @State private var isMinPresented: Bool = false
+	@State private var isMaxPresented: Bool = false
 
     var body: some View {
         VStack {
-            HeaderView()
+//            HeaderView()
             Spacer()
 
             ZStack {
                 VStack(spacing: 1) {
-                    ForEach((0 ..< 8).reversed(), id: \.self) { index in
-                        if index <= count {
+                    ForEach((0 ..< totalCount).reversed(), id: \.self) { index in
+                        if index < count {
                             Rectangle()
                                 .fill(Color.teal)
                         } else {
@@ -33,31 +35,56 @@ struct MainView: View {
                 .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2.5)
             }
 
-            Text("\(count)잔")
-                .font(.largeTitle)
-            Button(action: {
-                guard count < 8 else {
-                    isPresented = true
-                    return
-                }
+            HStack {
+				Button {
+					guard count > 0 else {
+						isMinPresented = true
+						return
+					}
+					
+					count -= 1
 
-                count += 1
+					UserDefaults.standard.dictionaryRepresentation().forEach { key, value in
+						UserDefaults.shared.set(value, forKey: key)
+					}
+					UserDefaults.shared.set(count, forKey: "drinkCount")
+					
+					WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
+				} label: {
+					Image(systemName: "minus.circle.fill")
+						.foregroundColor(.black)
+						.frame(width: 44, height: 44)
+				}
+				.alert(isPresented: $isMinPresented, content: {
+					Alert(title: Text(""), message: Text("한 잔 이상은 마셔야죠 😨"))
+				})
+				
+				Text("\(count) 잔")
+					.font(.largeTitle)
+				
+				Button {
+					guard count < totalCount else {
+						isMaxPresented = true
+						return
+					}
+					
+					count += 1
 
-                UserDefaults.standard.dictionaryRepresentation().forEach { key, value in
-                    UserDefaults.shared.set(value, forKey: key)
-                }
-                UserDefaults.shared.set(count, forKey: "drinkCount")
-                WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
-            }) {
-                Text("마시기")
-                    .padding()
-					.background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(4)
+					UserDefaults.standard.dictionaryRepresentation().forEach { key, value in
+						UserDefaults.shared.set(value, forKey: key)
+					}
+					UserDefaults.shared.set(count, forKey: "drinkCount")
+					WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
+				} label: {
+					Image(systemName: "plus.circle.fill")
+						.foregroundColor(.black)
+						.frame(width: 44, height: 44)
+				}
+				.alert(isPresented: $isMaxPresented, content: {
+					Alert(title: Text(""), message: Text("오늘 목표 물을 다 마셨습니다 🥳"))
+				})
             }
-            .alert(isPresented: $isPresented, content: {
-                Alert(title: Text(""), message: Text("오늘 목표 물을 다 마셨습니다 :)"))
-            })
+
             Spacer()
         }
     }

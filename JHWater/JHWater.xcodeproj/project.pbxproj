@@ -32,6 +32,7 @@
 		E90A9D7D2A47531400D95679 /* FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D7C2A47531400D95679 /* FadeInOut.swift */; };
 		E90A9D7F2A47548B00D95679 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D7E2A47548B00D95679 /* HeaderView.swift */; };
 		E90A9D812A475AF200D95679 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D802A475AF200D95679 /* SettingView.swift */; };
+		E90A9D842A47BC6600D95679 /* SettingItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90A9D832A47BC6600D95679 /* SettingItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		E90A9D7C2A47531400D95679 /* FadeInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInOut.swift; sourceTree = "<group>"; };
 		E90A9D7E2A47548B00D95679 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E90A9D802A475AF200D95679 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E90A9D832A47BC6600D95679 /* SettingItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 				E90A9D7C2A47531400D95679 /* FadeInOut.swift */,
 				E90A9D7E2A47548B00D95679 /* HeaderView.swift */,
 				E90A9D802A475AF200D95679 /* SettingView.swift */,
+				E90A9D832A47BC6600D95679 /* SettingItemRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				E90A9D812A475AF200D95679 /* SettingView.swift in Sources */,
 				E90A9D7F2A47548B00D95679 /* HeaderView.swift in Sources */,
 				E90A9D7D2A47531400D95679 /* FadeInOut.swift in Sources */,
+				E90A9D842A47BC6600D95679 /* SettingItemRow.swift in Sources */,
 				E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
 				E90A9D1D2A470E3A00D95679 /* MainView.swift in Sources */,
 				E90A9D662A47107900D95679 /* UserDefaults+Extension.swift in Sources */,
