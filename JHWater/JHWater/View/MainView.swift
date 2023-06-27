@@ -16,8 +16,9 @@ struct MainView: View {
 	
     var body: some View {
         VStack {
-            //			HeaderView()
-            Spacer()
+			HeaderView()
+            
+			Spacer()
 
             ZStack {
                 VStack(spacing: 1) {
