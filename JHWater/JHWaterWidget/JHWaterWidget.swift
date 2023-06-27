@@ -23,7 +23,6 @@ struct Provider: IntentTimelineProvider {
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (DrinkWaterEntry) -> Void) {
         let count = UserDefaults.shared.integer(forKey: "drinkCount")
         let glassesOfWater = getGlassesOfWater(with: count)
-
         let entry = DrinkWaterEntry(
             date: Date(),
             glassesOfWater: glassesOfWater,
@@ -39,7 +38,6 @@ struct Provider: IntentTimelineProvider {
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-
             let count = UserDefaults.shared.integer(forKey: "drinkCount")
             let glassesOfWater = getGlassesOfWater(with: count)
             let entry = DrinkWaterEntry(
@@ -119,6 +117,7 @@ struct JHWaterWidget: Widget {
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
+		.supportedFamilies([.systemSmall])
     }
 }
 
