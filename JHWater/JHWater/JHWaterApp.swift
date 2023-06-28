@@ -11,7 +11,7 @@ import SwiftUI
 struct JHWaterApp: App {
     var body: some Scene {
         WindowGroup {
-            LaunchScreenView()
+			SplashView()
         }
     }
 }

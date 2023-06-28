@@ -69,7 +69,7 @@ struct SettingItemRow: View {
 
 struct SettingItemRow_Previews: PreviewProvider {
 	static var previews: some View {
-		SettingItemRow(info: SettingMenuInfo(name: "test"))
+		SettingItemRow(info: SettingMenuInfo(name: "하루 목표"))
 	}
 }
 

@@ -27,7 +27,7 @@
 		E97C22222A4B3E8B00BDF70C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C22212A4B3E8B00BDF70C /* SettingView.swift */; };
 		E97C22242A4B409200BDF70C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C22232A4B409200BDF70C /* HeaderView.swift */; };
 		E98CD08C2A4B264700F21E86 /* SettingItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */; };
-		E98CD08E2A4B26D500F21E86 /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08D2A4B26D500F21E86 /* LaunchScreenView.swift */; };
+		E98CD08E2A4B26D500F21E86 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08D2A4B26D500F21E86 /* SplashView.swift */; };
 		E98CD0902A4B26F900F21E86 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08F2A4B26F900F21E86 /* LottieView.swift */; };
 		E98CD0932A4B274000F21E86 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E98CD0922A4B274000F21E86 /* Lottie */; };
 		E98CD0952A4B276100F21E86 /* FadeInOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD0942A4B276100F21E86 /* FadeInOutView.swift */; };
@@ -99,7 +99,7 @@
 		E97C22212A4B3E8B00BDF70C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E97C22232A4B409200BDF70C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingItemRow.swift; sourceTree = "<group>"; };
-		E98CD08D2A4B26D500F21E86 /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		E98CD08D2A4B26D500F21E86 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E98CD08F2A4B26F900F21E86 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		E98CD0942A4B276100F21E86 /* FadeInOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeInOutView.swift; sourceTree = "<group>"; };
 		E98CD0962A4B27B700F21E86 /* Animation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Animation+Extension.swift"; sourceTree = "<group>"; };
@@ -235,16 +235,40 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		E97C22252A4C823300BDF70C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */,
+				E97C22212A4B3E8B00BDF70C /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E97C22262A4C824000BDF70C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E98CD0942A4B276100F21E86 /* FadeInOutView.swift */,
+				E98CD08F2A4B26F900F21E86 /* LottieView.swift */,
+				E97C22232A4B409200BDF70C /* HeaderView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E97C22272A4C825200BDF70C /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E98CD08D2A4B26D500F21E86 /* SplashView.swift */,
+				E90A9D1C2A470E3A00D95679 /* MainView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		E98CD08A2A4B264700F21E86 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E98CD08D2A4B26D500F21E86 /* LaunchScreenView.swift */,
-				E97C22232A4B409200BDF70C /* HeaderView.swift */,
-				E90A9D1C2A470E3A00D95679 /* MainView.swift */,
-				E98CD08F2A4B26F900F21E86 /* LottieView.swift */,
-				E98CD0942A4B276100F21E86 /* FadeInOutView.swift */,
-				E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */,
-				E97C22212A4B3E8B00BDF70C /* SettingView.swift */,
+				E97C22262A4C824000BDF70C /* Common */,
+				E97C22272A4C825200BDF70C /* Screen */,
+				E97C22252A4C823300BDF70C /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,7 +459,7 @@
 				E97C22242A4B409200BDF70C /* HeaderView.swift in Sources */,
 				E98CD0902A4B26F900F21E86 /* LottieView.swift in Sources */,
 				E90A9D1B2A470E3A00D95679 /* JHWaterApp.swift in Sources */,
-				E98CD08E2A4B26D500F21E86 /* LaunchScreenView.swift in Sources */,
+				E98CD08E2A4B26D500F21E86 /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,7 +650,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.app.water;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -662,7 +686,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = jeehge.com.app.water;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

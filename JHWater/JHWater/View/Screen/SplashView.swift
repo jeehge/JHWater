@@ -1,5 +1,5 @@
 //
-//  LaunchScreenView.swift
+//  SplashView.swift
 //  JHWater
 //
 //  Created by JH on 2023/06/27.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LaunchScreenView: View {
+struct SplashView: View {
     @State private var navigated: Bool = false
 
     let moveToTimer = Timer.publish(every: 3.0, on: .main, in: .common)
@@ -24,7 +24,10 @@ struct LaunchScreenView: View {
                 .foregroundColor(.white)
         }
         .onReceive(moveToTimer) { _ in
-			UserDefaults.shared.set(8, forKey: "totalCount")
+			if UserDefaults.shared.integer(forKey: "totalCount") <= 0 {
+				UserDefaults.shared.set(8, forKey: "totalCount")
+			}
+			
             navigated = true
         }
         .fullScreenCover(isPresented: $navigated) {
@@ -33,8 +36,8 @@ struct LaunchScreenView: View {
     }
 }
 
-struct LaunchScreenView_Previews: PreviewProvider {
+struct SplashView_Previews: PreviewProvider {
     static var previews: some View {
-        LaunchScreenView()
+		SplashView()
     }
 }

@@ -10,7 +10,10 @@ import SwiftUI
 struct SettingView: View {
 
 	var body: some View {
-		Text("test")
+		List {
+			SettingItemRow(info: SettingMenuInfo(name: "하루 목표"))
+			SettingItemRow(info: SettingMenuInfo(name: "하루 목표"))
+		}
 	}
 }
 
