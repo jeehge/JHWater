@@ -13,12 +13,12 @@ struct MainView: View {
     @State private var totalCount = UserDefaults.shared.integer(forKey: "totalCount")
     @State private var isMinPresented: Bool = false
     @State private var isMaxPresented: Bool = false
-	
+
     var body: some View {
         VStack {
-			HeaderView()
-            
-			Spacer()
+//            HeaderView()
+
+            Spacer()
 
             ZStack {
                 VStack(spacing: 1) {
@@ -28,11 +28,11 @@ struct MainView: View {
                                 .fill(Color.teal)
                         } else {
                             Rectangle()
-                                .fill(Color.white)
+                                .fill(Color.clear)
                         }
                     }
                 }
-                .border(Color.black, width: 3)
+                .border(Color("borderColor"), width: 3)
                 .frame(width: UIScreen.main.bounds.width / 2, height: UIScreen.main.bounds.height / 2.5)
             }
 
@@ -52,7 +52,6 @@ struct MainView: View {
                     WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
                 } label: {
                     Image(systemName: "minus.circle.fill")
-                        .foregroundColor(.black)
                         .frame(width: 44, height: 44)
                 }
                 .alert(isPresented: $isMinPresented, content: {
@@ -76,7 +75,6 @@ struct MainView: View {
                     WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
                 } label: {
                     Image(systemName: "plus.circle.fill")
-                        .foregroundColor(.black)
                         .frame(width: 44, height: 44)
                 }
                 .alert(isPresented: $isMaxPresented, content: {

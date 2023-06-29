@@ -80,6 +80,8 @@ struct JHWaterWidgetEntryView: View {
 
     var body: some View {
         ZStack {
+			Color.white
+			
             VStack(spacing: 1) {
                 ForEach(0 ..< entry.glassesOfWater.count) { index in
                     if entry.glassesOfWater.reversed()[index] {

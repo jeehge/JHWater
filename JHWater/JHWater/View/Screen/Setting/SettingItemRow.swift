@@ -31,7 +31,6 @@ struct SettingItemRow: View {
 						UserDefaults.shared.set(value, forKey: key)
 					}
 					UserDefaults.shared.set(totalCount, forKey: "totalCount")
-					
 					print(totalCount)
 					WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
 				} label: {
@@ -47,6 +46,7 @@ struct SettingItemRow: View {
 						UserDefaults.shared.set(value, forKey: key)
 					}
 					UserDefaults.shared.set(totalCount, forKey: "totalCount")
+					print(totalCount)
 					WidgetCenter.shared.reloadTimelines(ofKind: "JHWaterWidget")
 				} label: {
 					Image(systemName: "plus.circle.fill")

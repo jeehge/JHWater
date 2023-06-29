@@ -18,7 +18,6 @@ struct HeaderView: View {
                 showingSheet.toggle()
             } label: {
                 Image(systemName: "gearshape.fill")
-                    .foregroundColor(.black)
                     .frame(width: 44, height: 44)
             }
             .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 16))

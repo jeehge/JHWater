@@ -11,8 +11,9 @@ struct SettingView: View {
 
 	var body: some View {
 		List {
-			SettingItemRow(info: SettingMenuInfo(name: "하루 목표"))
-			SettingItemRow(info: SettingMenuInfo(name: "하루 목표"))
+			SettingItemRow(info: SettingMenuInfo(name: "하루 목표(잔)"))
+			SettingItemRow(info: SettingMenuInfo(name: "한 잔(ml)"))
+			DefaultRow()
 		}
 	}
 }

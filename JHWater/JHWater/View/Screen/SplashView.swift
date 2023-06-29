@@ -15,6 +15,8 @@ struct SplashView: View {
 
     var body: some View {
         ZStack {
+			Color.white
+			
             LottieView(lottieFile: "83562-water")
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
 
