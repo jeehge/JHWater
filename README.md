@@ -12,4 +12,6 @@
 
 #### 실행화면
 
-![preview](https://github.com/jeehge/resume/blob/master/Image/project_lunch.png)
+<img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9983.PNG" alt="지혜로운 수분충전">
+<img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9986.PNG" alt="지혜로운 수분충전">
+
