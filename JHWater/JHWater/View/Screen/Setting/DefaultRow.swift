@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct DefaultRow: View {
+	var title: String
+	
     var body: some View {
-        Text("test")
+        Text("\(title)")
     }
 }
 
 struct DefaultRow_Previews: PreviewProvider {
     static var previews: some View {
-        DefaultRow()
+		DefaultRow(title: "개발자 정보")
     }
 }
