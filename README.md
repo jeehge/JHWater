@@ -9,7 +9,10 @@
 - 사용언어 : SwiftUI
 - 기획의도 : 간단한 위젯으로 하루 목표한 물을 마시도록 유도해보자
 <br>
-[2023 adiOS Summore](https://festa.io/events/3556)에서 위젯에 대해 알아보고 직접 만들어보았다!
+
+[2023 adiOS Summore](https://festa.io/events/3556) 
+에서 위젯에 대해 알아보고 직접 만들어보았다!
+
 <br>
 
 #### 실행화면
