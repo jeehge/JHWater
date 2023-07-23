@@ -27,6 +27,7 @@
 		E97C22222A4B3E8B00BDF70C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C22212A4B3E8B00BDF70C /* SettingView.swift */; };
 		E97C22242A4B409200BDF70C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C22232A4B409200BDF70C /* HeaderView.swift */; };
 		E97C22292A4C831E00BDF70C /* DefaultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97C22282A4C831E00BDF70C /* DefaultRow.swift */; };
+		E97E53F02A6D77BD007611E8 /* WaterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E53EF2A6D77BD007611E8 /* WaterViewModel.swift */; };
 		E98CD08C2A4B264700F21E86 /* SettingItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */; };
 		E98CD08E2A4B26D500F21E86 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08D2A4B26D500F21E86 /* SplashView.swift */; };
 		E98CD0902A4B26F900F21E86 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98CD08F2A4B26F900F21E86 /* LottieView.swift */; };
@@ -100,6 +101,7 @@
 		E97C22212A4B3E8B00BDF70C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		E97C22232A4B409200BDF70C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E97C22282A4C831E00BDF70C /* DefaultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRow.swift; sourceTree = "<group>"; };
+		E97E53EF2A6D77BD007611E8 /* WaterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterViewModel.swift; sourceTree = "<group>"; };
 		E98CD08B2A4B264700F21E86 /* SettingItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingItemRow.swift; sourceTree = "<group>"; };
 		E98CD08D2A4B26D500F21E86 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E98CD08F2A4B26F900F21E86 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			children = (
 				E90A9D622A470F9B00D95679 /* JHWater.entitlements */,
 				E90A9D1A2A470E3A00D95679 /* JHWaterApp.swift */,
+				E97E53EC2A6D7782007611E8 /* ViewModel */,
 				E98CD08A2A4B264700F21E86 /* View */,
 				E90A9D642A47106600D95679 /* Utils */,
 				E90A9D1E2A470E3B00D95679 /* Assets.xcassets */,
@@ -265,6 +268,14 @@
 				E97C22252A4C823300BDF70C /* Setting */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		E97E53EC2A6D7782007611E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E97E53EF2A6D77BD007611E8 /* WaterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E98CD08A2A4B264700F21E86 /* View */ = {
@@ -455,6 +466,7 @@
 				E98CD0972A4B27B700F21E86 /* Animation+Extension.swift in Sources */,
 				E97C22222A4B3E8B00BDF70C /* SettingView.swift in Sources */,
 				E98CD0952A4B276100F21E86 /* FadeInOutView.swift in Sources */,
+				E97E53F02A6D77BD007611E8 /* WaterViewModel.swift in Sources */,
 				E98CD08C2A4B264700F21E86 /* SettingItemRow.swift in Sources */,
 				E97C22292A4C831E00BDF70C /* DefaultRow.swift in Sources */,
 				E90A9D5A2A470F0000D95679 /* JHWaterWidget.intentdefinition in Sources */,
