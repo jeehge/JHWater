@@ -17,6 +17,6 @@
 
 #### 실행화면
 
-![541shots_so](https://github.com/jeehge/JHWater/assets/8108570/b47cf157-f563-43bc-ac2e-69bb91a0f45f)
+![979shots](https://github.com/jeehge/JHWater/assets/8108570/cb6d1f53-804e-43b2-8bcd-1b80c214396c)
 
 
