@@ -7,10 +7,16 @@
 
 - 기간 : 2023.06.24 ~ 2023.06.28
 - 사용언어 : SwiftUI
-- 담당업무 : 기획, 설계, 개발
 - 기획의도 : 간단한 위젯으로 하루 목표한 물을 마시도록 유도해보자
+<br>
+
+[2023 adiOS Summore](https://festa.io/events/3556) 
+에서 위젯에 대해 알아보고 직접 만들어보았다!
+
+<br>
 
 #### 실행화면
 
-<img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9983.PNG" alt="지혜로운 수분충전"> <img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9986.PNG" alt="지혜로운 수분충전">
+![979shots](https://github.com/jeehge/JHWater/assets/8108570/cb6d1f53-804e-43b2-8bcd-1b80c214396c)
+
 
