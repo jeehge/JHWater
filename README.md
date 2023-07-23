@@ -17,5 +17,6 @@
 
 #### 실행화면
 
-<img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9983.PNG" alt="지혜로운 수분충전"> <img width="250" src="https://github.com/jeehge/JHWater/blob/main/Document/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/IMG_9986.PNG" alt="지혜로운 수분충전">
+![541shots_so](https://github.com/jeehge/JHWater/assets/8108570/b47cf157-f563-43bc-ac2e-69bb91a0f45f)
+
 
